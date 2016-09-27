@@ -1,0 +1,14 @@
+<html>
+    <head>
+	<title>Qun Xia Zhen</title>
+    </head>
+    <body>
+	{% include "head.html" %}
+
+        {% block content %}
+	<p>这里面的内容会被继承者们覆盖</p>
+	{% endblock %}
+
+        {% include "foot.html" %}
+    </body>
+</html>

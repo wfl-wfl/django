@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+{%extends "morrisbak.html"%}
+ {%block abc%}
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            用户数量
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+		  <head>
+        <meta charset="utf-8">
+        <title>ECharts</title>
+        <!-- 引入 echarts.js-->
+        <script src="/static/echarts.min.js"></script>
+    </head>
+    <body>
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="main" style="width: 600px;height:400px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '用户数量'
+                },
+                tooltip: {},
+                legend: {
+                    data:['销量']
+                },
+                xAxis: {
+                    data: ["七月份","八月份","九月份"]
+                },
+                yAxis: {},
+                series: [{
+                    name: '用户',
+                    type: 'line', 
+                    data: [30,20,{{ee}}]}]
+                };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    </body>
+			</div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            系统用户
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+			<head>
+        <meta charset="utf-8">
+        <title>ECharts</title>
+        <!-- 引入 echarts.js-->
+        <script src="/static/echarts.min.js"></script>
+    </head>
+    <body>
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="ccc" style="width: 600px;height:400px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('ccc'));
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '系统用户百分比'
+                },
+                tooltip: {},
+                legend: {
+                    data:['百分比']
+                },
+                series: [{
+                    name: '百分比',
+                    type: 'pie', 
+                    data: [ {value:{{bb}},name:"普通用户"},{value:{{dd}},name:"系统用户"},   ]}]
+                };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    </body>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+ <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            系统用户
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                        <head>
+        <meta charset="utf-8">
+        <title>ECharts</title>
+        <!-- 引入 echarts.js-->
+        <script src="/static/echarts.min.js"></script>
+    </head>
+    <body>
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="aaa" style="width: 600px;height:400px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('aaa'));
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: ''
+                },
+                tooltip: {},
+                legend: {
+                    data:['百分比']
+                },
+ 		xAxis: {
+                    data: ["普通用户","系统用户","用户总量"]
+                },
+                yAxis: {},
+                series: [{
+                    name: '百分比',
+                    type: 'bar',        
+                    data: [{{bb}},{{dd}},{{ee}}]}]
+                };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    </body>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            用户
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+		<head>
+        <meta charset="utf-8">
+        <title>ECharts</title>
+        <!-- 引入 echarts.js-->
+        <script src="/static/echarts.min.js"></script>
+    </head>
+    <body>
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="bbb" style="width: 600px;height:400px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('bbb'));
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '登录用户数历史'
+                },
+                tooltip: {},
+                legend: {
+                    data:['用户']
+                },
+		xAxis: {
+                    data: ["大前天","前天","昨天","今天"]
+                },
+                yAxis: {},
+                series: [{
+                    name: '百分比',
+                    type: 'bar',        
+                    data: [5,6,4,{{ff}}]}]
+                };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+    </body>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            ECharts 使用特性
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+			<p> ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。</p>
+                            <a target="_blank" class="btn btn-default btn-lg btn-block" href="http://echarts.baidu.com/index.html">查看ECharts官方文档</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+        {%endblock%}

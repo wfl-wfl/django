@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>缘分测试</title>
+    <script>
+      function my(){
+      var user="王富龙"
+      var name1=document.getElementById("test1").value
+      var name2=document.getElementById("test2").value
+      if(name1 == user)
+        {
+          alert("100")
+        }
+      else if(name2 == user)
+        {
+          alert("100")
+        }  
+                  
+/*    var hehe="wangfulong" */
+/*    function luck(){ */
+      else
+        {
+        var number=Math.random()
+        number=Math.ceil(number*100)
+        alert(number)
+        }
+/*    document.write("num") */
+/*   } */
+        }
+    </script>
+  </head>
+  <body>
+    <form>
+      请输入他的名字:<input id="test1" type="text" name="he"><br>
+      请输入她的名字:<input id="test2" type="text" name="she"><br>
+    </form>
+    <button onclick="my()">点击测试缘分</button>
+  </body>
+</html>
